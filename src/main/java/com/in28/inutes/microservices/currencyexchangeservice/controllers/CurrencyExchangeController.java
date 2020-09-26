@@ -28,7 +28,6 @@ public class CurrencyExchangeController {
         CurrencyExchangeValue currencyExchangeValue =   currencyExchangeService.getCurrencyExchangeValue(from, to);
         String serverPort   =   appConfig.getPort();
 
-        log.info("serverPort :: "+serverPort);
         if(currencyExchangeValue != null)
         {
             currencyExchangeValue.setPort(serverPort);
